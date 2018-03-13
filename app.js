@@ -4,8 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-
 var app = express();
 
 // uncomment after placing your favicon in /public
