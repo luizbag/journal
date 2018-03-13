@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "node ./bin/www",
     "build": "ng build --prod",
-    "test": "mocha && ng test -w false",
+    "test": "mocha --exit && ng test -w false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod"
