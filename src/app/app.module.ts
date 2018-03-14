@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { AuthService } from './auth.service';
+import { JournalComponent } from './journal/journal.component';
 
 
 @NgModule({
@@ -17,14 +19,15 @@ import { SigninComponent } from './signin/signin.component';
     NavbarComponent,
     LandingComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    JournalComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
